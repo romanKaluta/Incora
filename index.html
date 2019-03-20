@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<main>
+		<section>
+			<div class="background"></div>
+			<div class="price">
+				<div class="price-content">
+					<div class="price_total">TOTAL</div>
+					<h1 class="prise_total_cost">$898</h1>
+					<div class="price_detail">
+						<div class="price_detail-detail">DETAIL</div>
+						<div class="flex price_detail_item">
+							<div class="detail_item-name">iPad Pro</div>
+							<div class="detail_item-cost">$799</div>
+						</div>
+						<div class="flex price_detail_item">
+							<div class="detail_item-name">Apple Pencil</div>
+							<div class="detail_item-cost">$99</div>
+						</div>
+					</div>
+					<button class="btn-submit" onclick="pops()">PAY NOW</button>
+				</div>
+			</div>
+			<div class="form">
+				<div class="flex card_name">
+					<div>Carly Ling</div>
+					<div>VISA</div>
+				</div>
+				<form name="myform" onsubmit="return false">
+					<label for="code">Credit Card Number</label>
+				    <input class="input" type="text" id="code" autocomplete="off" name="cardcode" placeholder="XXXX XXXX XXXX XXXX">
+				    <div class="flex form_flex">
+					    <div>
+						    <label for="month">Expiration</label>
+						    <input class="input inline inputMonth" type="text" id="month" name="cardmonth" autocomplete="off">
+						    <input class="input inline inputYear" type="text" id="year" name="cardyear" maxlength="4" autocomplete="off">
+					    </div>
+					    <div class="flex flex_CVV">
+						    <label for="CVV">cvv</label>
+						    <input class="input inputCVV" type="text" id="CCV" name="cardcvv" maxlength="3" autocomplete="off" placeholder="XXX">
+						</div>
+					</div>
+				</form>
+			</div> <!-- flex -->
+		</section>
+	</main>
+				
+	<script src="js/index.js"></script>
+</body>
+</html>
